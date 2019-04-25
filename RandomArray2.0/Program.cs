@@ -31,7 +31,6 @@ namespace RandomArray
             Console.ReadKey();
         }
 
-
         int ReadArrayDates(string str)
         {
             int output;
@@ -45,7 +44,7 @@ namespace RandomArray
             numbers = new int[numOfElements];
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = random.Next(minValue, maxValue +1);
+                numbers[i] = random.Next(minValue, maxValue + 1);
             }
             this.numbers = numbers;
         }
@@ -88,7 +87,8 @@ namespace RandomArray
         }
         void PrintArray(int[] arr)
         {
-            foreach (int i in arr) Console.Write(i + " ");
+            
+            foreach (int i in arr) Console.Write("{0,3} ", i);
         }
     }
 }
